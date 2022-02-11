@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="88" id="KGk-i7-Jjw" customClass="ListTableViewCell" customModule="Pokemon_List" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ULd-u7-o7d">
+                        <rect key="frame" x="8" y="8" width="398" height="72"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b0K-eT-abm">
+                                <rect key="frame" x="0.0" y="10" width="52" height="52"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xif-fX-xSO">
+                                        <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Xif-fX-xSO" secondAttribute="height" multiplier="1:1" id="Ckm-Xs-mrl"/>
+                                            <constraint firstAttribute="width" constant="52" id="F3Z-dc-t3d"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Xif-fX-xSO" secondAttribute="bottom" id="6d4-hI-a2T"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xif-fX-xSO" secondAttribute="trailing" id="RuE-Pd-McQ"/>
+                                    <constraint firstItem="Xif-fX-xSO" firstAttribute="top" secondItem="b0K-eT-abm" secondAttribute="top" id="UaJ-Y5-Xeo"/>
+                                    <constraint firstItem="Xif-fX-xSO" firstAttribute="leading" secondItem="b0K-eT-abm" secondAttribute="leading" id="Xtv-Io-2uZ"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="2Tp-yS-5DN">
+                                <rect key="frame" x="64" y="16" width="290" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8NG-ty-3o2">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="20"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sED-Rx-Fg9">
+                                        <rect key="frame" x="0.0" y="24" width="290" height="16"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QiG-Z7-4pK">
+                                <rect key="frame" x="366" y="20" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="O7f-zw-feY"/>
+                                    <constraint firstAttribute="width" secondItem="QiG-Z7-4pK" secondAttribute="height" multiplier="1:1" id="XhS-ju-a7H"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="checkbox"/>
+                                <connections>
+                                    <action selector="checkboxDidToggle:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="n6L-K0-iTP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ULd-u7-o7d" secondAttribute="trailing" constant="8" id="2a5-Uv-5Ez"/>
+                    <constraint firstAttribute="bottom" secondItem="ULd-u7-o7d" secondAttribute="bottom" constant="8" id="BOI-Cl-Xps"/>
+                    <constraint firstItem="ULd-u7-o7d" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="GBD-gL-Tw6"/>
+                    <constraint firstItem="ULd-u7-o7d" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="R2M-Un-D6K"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkboxBtn" destination="QiG-Z7-4pK" id="jRq-Cp-gqV"/>
+                <outlet property="pokemonImageView" destination="Xif-fX-xSO" id="1sc-9G-pmJ"/>
+                <outlet property="selectionBtn" destination="QiG-Z7-4pK" id="lb0-T2-ilb"/>
+                <outlet property="subtitleLbl" destination="sED-Rx-Fg9" id="8X8-Od-dM7"/>
+                <outlet property="titleLbl" destination="8NG-ty-3o2" id="6Yi-YJ-Lk7"/>
+            </connections>
+            <point key="canvasLocation" x="205.79710144927537" y="104.46428571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkbox" width="25" height="25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

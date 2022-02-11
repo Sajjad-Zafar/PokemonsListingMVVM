@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionViewCell" id="gTV-IL-0wX" customClass="HomeCollectionViewCell" customModule="Pokemon_List" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="114" height="104"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="114" height="104"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sn7-Zb-db7" customClass="CustomView" customModule="Pokemon_List" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="114" height="104"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2qp-mb-azm">
+                                <rect key="frame" x="0.0" y="0.0" width="114" height="104"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daJ-Qx-Ee8">
+                                <rect key="frame" x="8" y="72" width="98" height="20"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2qp-mb-azm" firstAttribute="top" secondItem="Sn7-Zb-db7" secondAttribute="top" id="ABy-r4-57R"/>
+                            <constraint firstAttribute="trailing" secondItem="daJ-Qx-Ee8" secondAttribute="trailing" constant="8" id="JC5-qB-ljI"/>
+                            <constraint firstItem="daJ-Qx-Ee8" firstAttribute="leading" secondItem="Sn7-Zb-db7" secondAttribute="leading" constant="8" id="LBb-CM-zjG"/>
+                            <constraint firstAttribute="bottom" secondItem="daJ-Qx-Ee8" secondAttribute="bottom" constant="12" id="Mvy-bI-Nj1"/>
+                            <constraint firstAttribute="bottom" secondItem="2qp-mb-azm" secondAttribute="bottom" id="YNp-J8-EnJ"/>
+                            <constraint firstItem="2qp-mb-azm" firstAttribute="leading" secondItem="Sn7-Zb-db7" secondAttribute="leading" id="YQj-Lx-jld"/>
+                            <constraint firstAttribute="trailing" secondItem="2qp-mb-azm" secondAttribute="trailing" id="nak-0f-cGz"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.5568627451" green="0.60784313729999995" blue="0.64313725489999995" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Sn7-Zb-db7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Np7-NG-tou"/>
+                <constraint firstAttribute="trailing" secondItem="Sn7-Zb-db7" secondAttribute="trailing" id="bSf-tg-2ot"/>
+                <constraint firstItem="Sn7-Zb-db7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eCl-Y2-1hX"/>
+                <constraint firstAttribute="bottom" secondItem="Sn7-Zb-db7" secondAttribute="bottom" id="eWK-pn-6SF"/>
+            </constraints>
+            <size key="customSize" width="114" height="104"/>
+            <connections>
+                <outlet property="pokemonImageView" destination="2qp-mb-azm" id="KZd-Yf-UhD"/>
+                <outlet property="pokemonNameLbl" destination="daJ-Qx-Ee8" id="Y5P-lJ-VKm"/>
+            </connections>
+            <point key="canvasLocation" x="184.05797101449278" y="131.91964285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
